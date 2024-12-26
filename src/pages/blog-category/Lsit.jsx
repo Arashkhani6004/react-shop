@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import api, { getBlogCategory } from "../../services/config";
 import Layout from "../../layouts/Layout";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
+
 
 function Lsit() {
   const [data, setData] = useState([]);
@@ -34,10 +35,9 @@ function Lsit() {
       (error) => console.log(error);
     }
   };
-  console.log(data);
+
   const nextHandler = () => {
     setPage((page) => page + 1);
-    // console.log(page);
   };
   const prevHandler = (page) => {
     if (page <= 1) return;
@@ -51,6 +51,7 @@ function Lsit() {
           <span className="font-bold mr-1 font-md">{count}</span>Blog Categories
         </p>
       </div>
+      <Link to="/blog-category/add" className="block bg-sky-400 rounded-xl px-6 mb-3 py-2 text-sm w-max hover:bg-sky-600 hover:text-white transition-all">Add New Blog Category</Link>
       <table className="w-full text-start border-collapse border border-slate-400">
         <thead className="bg-sky-100">
           <tr>

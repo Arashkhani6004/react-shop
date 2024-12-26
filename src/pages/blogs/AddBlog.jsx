@@ -4,6 +4,7 @@ import api, { getBlogCategory } from "../../services/config";
 import ImageFile from "../../components/shared/ImageFile";
 import { useNavigate } from "react-router";
 import BlogForm from "../../components/blogs/BlogForm";
+import { Editor } from "ckeditor5";
 
 function AddBlog() {
   return (

@@ -51,11 +51,12 @@ function BlogForm({ editMode, id }) {
         }
         console.log("Blog Submit successfully");
       } catch (error) {
-        alert(error);
+        console.log(error)
       }
     }
     navigate("/blogs");
   };
+
   return (
     <div className="grid grid-cols-3 gap-8 mx-10">
       <div className="">
@@ -85,13 +86,14 @@ function BlogForm({ editMode, id }) {
         <select
           className="py-2 w-full px-3 border-slate-400	text-sm rounded-xl border focus:outline-none focus:border-sky-400 transition"
           value={
-            formData.category._id ? formData.category._id : formData.category
+            formData.category._id ? formData?.category?._id : formData?.category
           }
           name="category"
           onChange={changeHandler}
         >
+          <option value={"choose value"}>Choose Value</option>
           {category.map((cat) => (
-            <option key={cat._id} value={cat._id}>
+            <option key={cat._id} value={cat._id} >
               {cat.title}
             </option>
           ))}

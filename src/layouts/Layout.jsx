@@ -61,7 +61,7 @@ function Layout({ children }) {
                   style={{ fontSize: "14px" }}
                 />
               </button>
-              <div
+              <div key={item.name}
                 className={` mt-2 ${styles.collapseBody} ${
                   openDropDown === index ? styles.show : null
                 }`}

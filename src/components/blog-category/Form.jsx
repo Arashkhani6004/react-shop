@@ -52,7 +52,7 @@ function Form({ editMode, id }) {
     }
     navigate("/blog-category");
   };
-
+console.log(formData)
   return (
     <div className="grid grid-cols-2 gap-8">
       <div className="">
