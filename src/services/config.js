@@ -11,8 +11,8 @@ const getBlogCategory = (page, limit) =>
   `/blog-category?page=${page}&limit=${limit}`;
 const getBlogs = (query) => {
   const { page, limit, category, title, sort, url } = query;
-  console.log({ page, limit, category, title, sort, url });
-  return `/blog${page ? `?page=${page}` : ""}${limit ? `&limit=${limit}` : ""}`;
+  // console.log({ page, limit, category, title, sort, url });
+  return `/blog${page ? `?page=${page}` : ""}${limit ? `&limit=${limit}` : ""}${title ? `&title=${title}` : ""}${category ? `&category=${category}` : ""}`;
 };
 
 export default api;

@@ -51,9 +51,9 @@ function Lsit() {
           <span className="font-bold mr-1 font-md">{count}</span>Blog Categories
         </p>
       </div>
-      <Link to="/blog-category/add" className="block bg-sky-400 rounded-xl px-6 mb-3 py-2 text-sm w-max hover:bg-sky-600 hover:text-white transition-all">Add New Blog Category</Link>
+      <Link to="/blog-category/add" className="block bg-stone-950 text-white rounded-xl px-6 mb-3 py-2 text-sm w-max hover:bg-orange-600 hover:text-white transition-all">Add New Blog Category</Link>
       <table className="w-full text-start border-collapse border border-slate-400">
-        <thead className="bg-sky-100">
+        <thead className="bg-slate-100">
           <tr>
             <th colSpan={4} className="border border-slate-400 p-2 text-start">
               Title
@@ -97,14 +97,14 @@ function Lsit() {
               >
                 <div className="flex gap-5">
                   <button
-                    className="px-3 py-1 border bg-sky-600 text-white hover:bg-white hover:text-sky-300 transition border-slate-200 rounded-md "
+                    className="px-3 py-1 border bg-orange-600 text-white hover:bg-white hover:text-orange-300 transition rounded-md "
                     onClick={() => navigate(`/blog-category/${blogCat._id}`)}
                   >
                     <EditOutlined />
                   </button>
                   <button
                     onClick={() => deleteHandler(blogCat._id)}
-                    className="px-3 py-1 border bg-sky-600 text-white hover:bg-white hover:text-sky-300 transition border-slate-200 rounded-md "
+                    className="px-3 py-1 border bg-orange-600 text-white hover:bg-white hover:text-orange-300 transition rounded-md "
                   >
                     <DeleteOutlined />
                   </button>

@@ -62,7 +62,7 @@ function BlogForm({ editMode, id }) {
       <div className="">
         <label className="block font-bold text-md mb-1">Title</label>
         <input
-          className="py-2 w-full px-3 border-slate-400	text-sm rounded-xl border focus:outline-none focus:border-sky-400 transition"
+          className="py-2 w-full px-3 border-slate-400	text-sm rounded-xl border focus:outline-none focus:border-stone-800 transition"
           placeholder="Title"
           type="text"
           name="title"
@@ -73,7 +73,7 @@ function BlogForm({ editMode, id }) {
       <div className="">
         <label className="block font-bold text-md mb-1">Url</label>
         <input
-          className="py-2 w-full px-3 border-slate-400	text-sm rounded-xl border focus:outline-none focus:border-sky-400 transition"
+          className="py-2 w-full px-3 border-slate-400	text-sm rounded-xl border focus:outline-none focus:border-stone-800 transition"
           placeholder="Url"
           type="text"
           name="url"
@@ -84,7 +84,7 @@ function BlogForm({ editMode, id }) {
       <div className="">
         <label className="block font-bold text-md mb-1">Category</label>
         <select
-          className="py-2 w-full px-3 border-slate-400	text-sm rounded-xl border focus:outline-none focus:border-sky-400 transition"
+          className="py-2 w-full px-3 border-slate-400	text-sm rounded-xl border focus:outline-none focus:border-stone-800 transition"
           value={
             formData.category._id ? formData?.category?._id : formData?.category
           }
@@ -109,13 +109,13 @@ function BlogForm({ editMode, id }) {
           placeholder="Content"
           value={formData.content}
           onChange={changeHandler}
-          className="w-full py-2 w-full px-3 border-slate-400	text-sm rounded-xl border focus:outline-none focus:border-sky-400 transition h-56"
+          className="w-full py-2 w-full px-3 border-slate-400	text-sm rounded-xl border focus:outline-none focus:border-stone-800 transition h-56"
         ></textarea>
       </div>
       <div>
         <button
           onClick={() => submitHandler(editMode)}
-          className="px-20 py-2 bg-sky-300 text-black rounded-xl border border-sky-300 hover:bg-white transition hover:border-sky-300"
+          className="px-20 py-2 bg-stone-950 text-white rounded-xl border border-stone-300 hover:bg-stone-300 hover:text-black transition hover:border-stone-800"
         >
           Submit
         </button>

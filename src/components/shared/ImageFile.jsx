@@ -35,8 +35,8 @@ function ImageFile({ setFile, formData, folder }) {
 file:mr-4 file:py-2 file:px-4
 file:rounded-full file:border-0
 file:text-sm file:font-semibold
-file:bg-sky-50 file:text-sky-400
-hover:file:bg-sky-100
+file:bg-orange-50 file:text-orange-400
+hover:file:bg-orange-100
 "
           />
         </label>

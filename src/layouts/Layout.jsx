@@ -41,15 +41,15 @@ function Layout({ children }) {
   ];
   return (
     <div className="flex flex-row min-h-screen">
-      <div className="bg-sky-400 basis-1/6 p-3 rounded-md">
+      <div className="bg-orange-200 basis-1/6 p-3 rounded-e-3xl">
         <ul>
-          <li className="p-2 my-1 bg-sky-200 border-l-4 border-sky-700">
+          <li className="p-2 py-3 my-1 bg-sky-50 border-l-4 border-orange-400 rounded-e-xl hover:shadow-md transition">
             <Link to="/">Dashboard</Link>
           </li>
           {menuItems.map((item, index) => (
             <li
               key={index}
-              className="p-2 my-1 bg-sky-200 border-l-4 border-sky-700"
+              className="p-2 py-3 my-1 bg-sky-50 border-l-4 border-orange-400 rounded-e-xl hover:shadow-md transition"
             >
               <button
                 onClick={() => accordionHandler(index)}
@@ -70,7 +70,7 @@ function Layout({ children }) {
                   <Link
                     key={child.index}
                     to={child.link}
-                    className="block px-3 py-1 bg-sky-400 mb-1"
+                    className="block px-3 py-1 bg-neutral-800 mb-1 text-white rounded-md"
                   >
                     {child.name}
                   </Link>
