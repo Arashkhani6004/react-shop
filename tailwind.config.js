@@ -3,6 +3,7 @@ export default {
   content: [
     "./src/App.jsx",
     "./src/layouts/Layout.jsx",
+    "./src/pages/auth/LoginPage.jsx",
     "./src/pages/blog-category/Add.jsx",
     "./src/pages/blog-category/Edit.jsx",
     "./src/components/blog-category/Form.jsx",

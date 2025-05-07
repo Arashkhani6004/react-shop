@@ -3,7 +3,6 @@ const api = axios.create({ baseURL: "http://localhost:3000" });
 
 api.interceptors.response.use(
   (res) => res.data,
-  (err) => console.log(err)
 );
 // api.interceptors.request.use((res) => console.log(res));
 
