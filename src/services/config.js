@@ -1,6 +1,5 @@
 import axios from "axios";
 import { getToken } from "../cookie/token";
-import { jwtDecode } from "jwt-decode";
 
 const api = axios.create({ baseURL: "http://localhost:3000" });
 
