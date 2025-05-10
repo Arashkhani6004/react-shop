@@ -6,6 +6,7 @@ export default {
     "./src/pages/auth/LoginPage.jsx",
     "./src/pages/blog-category/Add.jsx",
     "./src/pages/blog-category/Edit.jsx",
+    "./src/components/auth/SignIn.jsx",
     "./src/components/blog-category/Form.jsx",
     "./src/components/blogs/Blogform.jsx",
     "./src/components/shared/ImageFile.jsx",
@@ -15,7 +16,12 @@ export default {
     "./src/pages/blogs/EditBlog.jsx",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        container: "80%",
+        120:"35rem"
+      },
+    },
   },
   plugins: [],
 };

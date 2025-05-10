@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SignIn from "../../components/auth/SignIn";
 import Confirm from "../../components/auth/Confirm";
+import styles from "./LoginPage.module.css"
 
 function LoginPage() {
   const [mobile, setMobile] = useState("");
@@ -8,11 +9,12 @@ function LoginPage() {
   const [step, setStep] = useState(1);
 
   return (
-    <div className="flex justify-center items-center max-w-xl m-auto min-h-screen">
-      <div className="bg-orange-200 rounded-xl w-full text-center p-2">
+    <div className={`min-h-screen ${styles.loginPage}`}>
+      <div className="flex justify-start items-center max-w-container m-auto min-h-screen">
+      <div className="rounded-3xl w-120 text-center ">
         {step == 1 && (
           <>
-            <p className=" font-bold m-0">Login</p>
+            <p className=" font-bold m-0 text-2xl mb-4">ورود به پنل مدیریت</p>
             <SignIn
               mobile={mobile}
               setMobile={setMobile}
@@ -29,6 +31,8 @@ function LoginPage() {
           </>
         )}
       </div>
+      </div>
+      
     </div>
   );
 }
